@@ -1,10 +1,14 @@
 <b>My First attempt:</b>
-I thought to change attack damage of bears and angrybears. 
+I thought to change attack damage of bears and angrybears.
+<code>
 virtual int32_t GetAttackDamage() override;
+</code>
 This function seems to be responsible for calculating attack damage.
+<code>
 int32_t Bear::GetAttackDamage(){
   return 0;
 }
+</code>
 Still, Bears can attack me and decrease my health.
 
 <b>My Second attempt:</b>
@@ -22,6 +26,7 @@ After that i noticed a tree near chest so I teleported into the tree after start
 
 <b>My Fifth attempt:</b>
 Some Function in Player Class(My friend noticed these functions).
+<code>
 virtual IQuest ** GetQuestList(size_t *);
 virtual void FreeQuestList(IQuest **);
 virtual IQuest * GetCurrentQuest(void);
@@ -32,9 +37,10 @@ virtual void SetCurrentQuest(IQuest *);
 virtual void StartQuest(IQuest *) override;
 virtual void AdvanceQuestToState(IQuest *, IQuestState *);
 virtual void CompleteQuest(IQuest *) override;
-
+</code>
 I thought to complete the quest using CompleteQuest function when the quest starts.
 So i wrote the code below in World::Tick function.
+<code>
 if (player != nullptr) {
   IQuest* currentQuest = player->GetCurrentQuest();
   if (currentQuest != nullptr){
@@ -43,4 +49,5 @@ if (player != nullptr) {
     }
   }
 }
+</code>
 But the game is crashing when i click on join button and in crash report i saw this error 'Exception was "SIGSEGV: invalid attempt to access memory at address 0x00000268"'.
