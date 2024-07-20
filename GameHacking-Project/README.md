@@ -21,8 +21,8 @@ But still they are getting armed after some time. I guess CanBeArmed function re
 
 <b>My Fourth attempt:</b>
 This time i thought to use the teleport option to teleport into places where it is physically not possible for bears to attack me.
-I teleported into ground after staring quest but fell out of bounds. So i though to keep on jumping to stay in bound but in some jumps player accidentally comes out and gets launched out very far.
-After that i noticed a tree near chest so I teleported into the tree after starting chest and it worked. I had to wait there for five minutes, after completion i just jumped so high, bears despawned and i opened the chest. With AWM that I got from chest, I killed 10-20 bears cuz I have unbearable anger on those bears.
+I teleported into ground after starting the quest but fell out of bounds. So i thought to keep on jumping to stay in bound but in some jumps player accidentally comes out and gets launched out very far.
+After that i noticed a tree near chest so I teleported into the tree after starting the quest and it worked. I had to wait there for five minutes, after completion i just jumped so high, bears despawned and i opened the chest. With AWM that I got from chest, I killed 10-20 bears cuz I have unbearable anger on those bears.
 
 <b>My Fifth attempt:</b>
 Some Function in Player Class(My friend noticed these functions).
